@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String Template</title>
+  </head>
+  <body>
+    <script>
+      const name = "Muhammad Syahdiannur Guntur";
+      const firstName = "Muhammad";
+      const middleName = "Syahdiannur";
+      const lastName = "Guntur";
+      const template = `Name : ${firstName} ${middleName} ${lastName}`;
+
+      document.writeln(template);
+      document.writeln("</br>");
+
+      const nilai = 90;
+      const template2 = `Name : ${name}, Lulus : ${nilai > 70}`;
+
+      document.writeln(template2);
+
+      let multiLineString = `
+Nama Saya Muhammad Syahdiannur
+Saya Kuliah di Politeknik Negeri Samarinda
+Saya Suka Ngoding
+      `;
+
+      document.writeln("<pre>");
+      document.writeln(multiLineString);
+      document.writeln("</pre>");
+    </script>
+  </body>
+</html>
