@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tipe Data Array</title>
+  </head>
+  <body>
+    <script>
+      let arrayKosong = [];
+
+      let arrayNama = ["Muhammad", "Syahdiannur", "Guntur"];
+
+      const names = [];
+      names.push("Muhammad"); // Menambah Array
+      names.push("Syahdiannur", "Guntur");
+      names.push("Makmur");
+
+      console.table(names);
+
+      console.log(names[0]);
+      console.log(names[1]);
+      console.log(names[2]);
+      console.log(names[3]);
+
+      names[0] = "Nirmala"; // Mengubah value Array berdasarkan index
+
+      console.table(names);
+
+      delete names[2]; // Menghapus Array berdasarkan index
+
+      console.table(names);
+
+      names.push("Budiluhur");
+
+      console.table(names);
+
+      names[2] = "Guntur lagi"; // Array yang telah dihapus masih bisa dipanggil kembali
+
+      names.push(1, 2, 3, 4, 5, true, false);
+
+      names.push(["Muhammad", "Syahdiannur", "Guntur"]); // Array didalam Array
+
+      console.table(names);
+    </script>
+  </body>
+</html>
