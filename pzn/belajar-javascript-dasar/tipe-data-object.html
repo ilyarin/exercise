@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tipe Data Object</title>
+  </head>
+  <body>
+    <script>
+      const orang = {
+        nama: "Muhammad Syahdiannur",
+        alamat: "Indonesia",
+        umur: 20,
+      };
+
+      // Menambah atau mengubah property / attribute
+      //   orang["nama"] = "Muhammad Syahdiannur";
+      //   orang["alamat"] = "Indonesia";
+      //   orang["umur"] = 20;
+
+      document.writeln(`Nama : ${orang.nama}`);
+      document.writeln("</br>");
+      document.writeln(`Alamat : ${orang.alamat}`);
+      document.writeln("</br>");
+      document.writeln(`Umur : ${orang.umur}`);
+
+      console.table(orang);
+
+      // Menghapus
+      delete orang["umur"];
+
+      console.table(orang);
+    </script>
+  </body>
+</html>
