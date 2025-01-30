@@ -13,6 +13,12 @@
         umur: 20,
       };
 
+      const buah = {
+        nama: "Apel",
+        warna: "Merah",
+        habitat: "Indonesia",
+      };
+
       // Menambah atau mengubah property / attribute
       //   orang["nama"] = "Muhammad Syahdiannur";
       //   orang["alamat"] = "Indonesia";
@@ -24,7 +30,16 @@
       document.writeln("</br>");
       document.writeln(`Umur : ${orang.umur}`);
 
+      document.writeln("</br>");
+      document.writeln("</br>");
+      document.writeln(`Nama : ${buah.nama}`);
+      document.writeln("</br>");
+      document.writeln(`Alamat : ${buah.warna}`);
+      document.writeln("</br>");
+      document.writeln(`Umur : ${buah.habitat}`);
+
       console.table(orang);
+      console.table(buah);
 
       // Menghapus
       delete orang["umur"];
